@@ -1,0 +1,25 @@
+@import '@styles/variables.scss';
+
+
+.container{
+    display: flex;
+    flex-direction: column;
+ 
+    .header{
+        width: 100%;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        display: flex;
+        justify-content: flex-end;
+
+        .create-btn{
+            margin-right: 2%;
+            padding: 1%;
+        }
+    }
+
+    .table{
+        border-radius: $border-radius;
+        box-shadow:  $box-shadow;
+    }
+}

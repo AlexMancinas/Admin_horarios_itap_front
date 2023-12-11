@@ -1,0 +1,56 @@
+@import '@styles/variables.scss';
+
+.container {
+    flex-shrink: 0;
+    margin-bottom: 17px;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    
+    .button {
+        display: none;
+        background: none;
+        border: none;
+        
+        :hover {
+            cursor: pointer;
+        }
+    }
+    
+    .button[data-render=true] {
+        display: block !important;
+    }
+    
+    .title {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: $breakpoint-md) {
+    .container {
+        width: 100%;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .button {
+            display: block;
+            position: absolute;
+            left: 0;
+
+            .icon {
+                height: 1.5em;
+            }
+        }
+
+        .close {
+            left: auto;
+            right: 0;
+        }
+
+        .title {
+            font-size: 22px;
+        }
+    }
+}

@@ -1,0 +1,41 @@
+.container{
+    width: 100vw;
+    height: 100vh;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    h1{
+        margin-bottom: 10px;
+    }
+    .form{
+        width: 30%;
+        height: 50%;
+        background-color: #e9e9e9;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 25px;
+        .input{
+            width: 80%;
+            height: 10%;
+            margin: 10px;
+            border-radius: 25px;
+            border: none;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        .button{
+            width: 80%;
+            height: 10%;
+            margin: 10px;
+            border-radius: 25px;
+            background-color: rgb(58, 58, 104);
+            border: none;
+            color: white;
+        }
+    }
+}
